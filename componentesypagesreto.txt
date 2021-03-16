@@ -1,0 +1,52 @@
+componentes
+    form resumen pasos formulario
+    form2deportivo
+    form2baile
+    form2imitacion
+    form2difusion
+    form2personalizado
+    form3hashtag
+    form4participantes
+
+
+pages
+/socila compartido
+/retoscreados
+/Fcr1
+    /fcr234deportivo
+    /fcr234baile
+    /fcr234imitacion
+    /fcr234difusion
+    /fcr234personalizado
+/fcrresumen
+/fcrGracias
+
+
+
+import React from "react";
+import styled from "styled-components";
+// import { useHistory } from "react-router-dom";
+
+
+const SocialCompartido = () => {
+  // let history = useHistory();
+
+  // const send =() => {
+  //   history.push("/retos");
+  // }
+
+  // const dos =() =>{
+  //   history.push("/creareto");
+  // }
+
+  return (
+    <div>
+        <button>Descubre retos</button>
+        {/* <img src="./gato.jpg" onClick={send} ></img> */}
+        <button>crea tu reto</button>
+        {/* <img src="./gato.jpg" onClick={dos} ></img> */}
+    </div>
+  );
+};
+
+export default SocialCompartido;

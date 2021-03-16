@@ -154,8 +154,86 @@ export const Buttons = styled.button`
     `}
 
     
+    ${'' /* boton de listo del form */}
+    ${props => props.contained2 && css`
+    background-color: ${colors.secondaryLight};
+    border: 2px solid ${colors.secondary};
+    color: ${colors.white};
+    padding-left: 52px;
+    padding-right: 52px;
+    `}
+
+    ${'' /* botones grises del form */}
+    ${props => props.gray1 && css`
+    font-weight: normal;
+    margin: 6px;
+    width: 300px;
+    background-color: ${colors.gray1};
+    border: 5px;
+    color: ${colors.black};
+    box-shadow: 2px 2px 2px #D1D1D1 ;
+    `}
+
+    ${'' /* botones grises socialcompartido */}
+    ${props => props.grayr && css`
+    width: 96px;
+    height: 28px;
+    font-weight: normal;
+    background-color: ${colors.gray3};
+    border: 0px;
+    color: ${colors.black};
+    `}
+
+    ${'' /* crea tu reto de social compartido */}
+    ${props => props.outline2 && css`
+    color: ${colors.secondary};
+    padding-left: 22px;
+    padding-right: 22px; 
+    background-color: transparent;
+    border: 2px solid ${colors.secondary};
+    `}
+
+    
 `
 
+// reto
+
+export const Inputs = styled.input`
+    font-weight: bold;
+    line-height: 20px;
+    height: 48px;
+    padding-left: 50px; 
+    border-radius: 40px;
+    margin: 0 24px;
+    cursor: pointer;
+
+    ${props => props.gray1 && css`
+    font-weight: normal;
+    margin: 6px;
+    width: 300px;
+    background-color: ${colors.gray1};
+    border: 5px;
+    color: ${colors.black};
+    box-shadow: 2px 2px 2px #D1D1D1 ;
+    `}
+
+    ${'' /* boton hastag y participante */}
+    ${props => props.hashtag && css`
+    font-weight: normal;
+    height: 40px;
+    margin: 6px;
+    width: 300px;
+    border: 1px solid #d1d1d1;
+    border-radius: 0px;
+    color: ${colors.black};
+    
+    `}
+`
+export const Cajas = styled.div`
+  margin-right: 16px;
+  margin-left: 16px;
+  
+`;
 
 
 
